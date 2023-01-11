@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessageFragment"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnQuitter"
+        style="none"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/orange"
+        android:text="@string/quitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/russoone_regular"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_Message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/orange"
+            android:backgroundTint="@color/Transparent"
+            android:hint="@string/message"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditText_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/orange"
+            android:backgroundTint="@color/Transparent"
+            android:hint="@string/num_ro_de_t_l_phone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnEnvoyer"
+        style="none"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/envoyer"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/russoone_regular"
+        />
+
+</FrameLayout>
