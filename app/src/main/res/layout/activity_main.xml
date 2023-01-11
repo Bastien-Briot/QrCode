@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/russoone_regular"
+        android:gravity="top"
+        android:paddingTop="100dp"
+        android:text="@string/scan_ton_qr_code"
+        android:textColor="#616161"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/scanBtn"
+        style="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150pt"
+        android:backgroundTint="@color/orange"
+        android:hint="@string/scanner_un_qr_code"
+        android:textColorHint="#5D4037"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+</LinearLayout>
